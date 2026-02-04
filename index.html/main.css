@@ -1,0 +1,19 @@
+body{
+color: dimgrey;
+}
+.took-text{
+color: red;
+}
+.main_link:hover {
+    color: red;
+    text-decoration: overline;
+    text-decoration-color: red;
+    cursor: no-drop;
+}
+.main_link:active{
+text-decoration: line-through;
+}
+.name:visited{
+text-decoration: line-through;
+color: grey;
+}
