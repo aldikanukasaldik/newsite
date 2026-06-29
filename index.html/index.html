@@ -1,65 +1,165 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-        главная страница
-        </title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        hi everyone 
-        <a class="main_link" href="https://www.roblox.com/download" target="_blank" title="на сайт роблокса"><strong>go to roblox</strong></a><br>
-        <a href="#noname" class="took-text">тык сюды</a><br>
-        <a name="noname">о ты тыкнул3</a>
-        <table>
-           <thead>
-            <tr>
-          <th class="name">
-            anuarbek aldiyar
-          </th>
-            </tr>
-           </thead> 
-           <tbody>
-           <tr>
-               <Td>
-                17 yearss
-               </Td> 
-            </tr>
-           </tbody>
-           <tfoot>
-            <tr>
-              <td>
-                from kazakstan
-              </td>  
-            </tr>
-           </tfoot>
-        </table>
-         <form>
-         <label  for="name">Bедите имя</label><br>
-         <input class=".name" type="text" placeholder="напиши что то" value="удали что тут написано" maxlength="20" name="name" id="name">
-          <input type="password"><br>
-         <input type="email" placeholder="email">
-          <input type="color"><br>
-          <input type="date">
-          <input type="time"><br>
-          <input type="checkbox"><br>
-          <input type="radio" name="a">
-          <input type="radio" name="a">
-          <input type="file"><br>
-          <input type="reset" value="перезапустить страницу"><br><br><br><br>
-          <textarea></textarea>
-          <button type="reset">reset</button><br><br>
-          <select>
-            <option>colt</option>
-            <option>shelly</option>
-            <option>Nita</option>
-            <option selected disabled>------</option><br><br><br>
-            <details>
-              <summary>подробнее</summary>
-            это мой первый сайт для теста так что ничего тут интересного нету
-            </details>
-          </select>
-         </form>
-         <p style="color: red;">heloo world</p>
-    </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красивый сайт</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#6a11cb,#2575fc);
+            color:white;
+            min-height:100vh;
+        }
+
+        header{
+            padding:25px;
+            text-align:center;
+            background:rgba(255,255,255,0.1);
+            backdrop-filter:blur(10px);
+        }
+
+        nav{
+            margin-top:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffe082;
+        }
+
+        .hero{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            height:70vh;
+        }
+
+        .hero h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            width:70%;
+            font-size:20px;
+            line-height:1.7;
+            color:#f0f0f0;
+        }
+
+        .btn{
+            margin-top:35px;
+            padding:15px 35px;
+            background:white;
+            color:#2575fc;
+            border:none;
+            border-radius:40px;
+            font-size:18px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.1);
+            background:#ffe082;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+            padding:50px;
+        }
+
+        .card{
+            width:280px;
+            background:rgba(255,255,255,0.12);
+            backdrop-filter:blur(15px);
+            border-radius:20px;
+            padding:25px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            background:rgba(255,255,255,0.2);
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>✨ ALDIK STUDIO ✨</h2>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Услуги</a>
+        <a href="#">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Добро пожаловать</h1>
+
+    <p>
+        Aldik studio разрабатывает красивые и современные веб-сайты, которые помогут вашему бизнесу выделиться в интернете.
+    </p>
+
+    <button class="btn">Подробнее</button>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h2>🌌 Раздел 1</h2>
+        <p>
+          Мы обеспечиваем качественный дизайн и функциональность, чтобы ваш сайт был не только красивым, но и удобным для пользователей.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🚀 Раздел 2</h2>
+        <p>
+            Также дадим вам возможность интеграции с различными сервисами и платформами, чтобы ваш сайт был максимально эффективным.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>💎 Раздел 3</h2>
+        <p>
+          Конечно же мы обеспечим полную поддержку и сопровождение вашего сайта, чтобы вы могли сосредоточиться на развитии вашего бизнеса.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    aldik studio 2024
+</footer>
+
+</body>
 </html>
